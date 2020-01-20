@@ -2,19 +2,37 @@ package managa_HieuThao.model_Managa;
 
 import java.util.Date;
 
+import javax.persistence.*;
 
+@Entity
+@Table(name="managa")
 public class Managa {
+	
+	@Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
 	private long id;
+	
+	@Column(name="id_manga")
 	private String id_manga;
+	@Column(name="name_manga")
 	private String name_manga;
+	@Column(name="type_manga")
 	private String type_manga;
+	@Column(name="chap_manga")
 	private int chap_manga;
+	@Column(name="status")
 	private String status;
+	@Column(name="description")
 	private String description;
+	@Column(name="year_manga")
 	private Date year_manga;
+	@Column(name="author")
 	private String author;
+	@Column(name="image_manga")
 	private String image_manga;
+	@Column(name="root_manga")
 	private String root_manga;
+	@Column(name="rate_manga")
 	private int rate_manga;
 	
 	public Managa() {

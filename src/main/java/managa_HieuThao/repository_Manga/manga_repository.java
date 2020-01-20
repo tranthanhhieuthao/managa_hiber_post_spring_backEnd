@@ -1,5 +1,11 @@
 package managa_HieuThao.repository_Manga;
 
-public class manga_repository {
+import java.util.List;
+
+public interface manga_repository<T> {
+	List<T> findAll();
+	T findById(long id);
+	void save(T model);
+	void remove(long id);
 
 }
