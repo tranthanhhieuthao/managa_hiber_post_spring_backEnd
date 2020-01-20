@@ -1,4 +1,4 @@
-package Model_Manga;
+package managa_HieuThao.model_Managa;
 
 import java.util.Date;
 
